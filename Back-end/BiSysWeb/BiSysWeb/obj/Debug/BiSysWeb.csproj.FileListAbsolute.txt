@@ -1,0 +1,158 @@
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\BiSysWeb.dll.config
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\BiSysWeb.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\BiSysWeb.pdb
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\csc.exe
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\csc.exe.config
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\csc.rsp
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\csi.exe
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\csi.exe.config
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\csi.rsp
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.AppContext.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Console.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Globalization.Calendars.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.Compression.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Net.Http.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Net.Sockets.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.ValueTuple.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.XPath.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\vbc.exe
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\vbc.exe.config
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\vbc.rsp
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\VBCSCompiler.exe
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\Antlr3.Runtime.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\Newtonsoft.Json.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Helpers.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Mvc.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Optimization.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Razor.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Razor.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\WebGrease.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Helpers.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Mvc.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Optimization.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.Razor.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Razor.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\Newtonsoft.Json.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\Antlr3.Runtime.pdb
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.csproj.AssemblyReference.cache
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.csproj.CoreCompileInputs.cache
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.csproj.CopyComplete
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.dll
+D:\Năm 3\Framework\Thực hành\TH4-20521779\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.pdb
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\BiSysWeb.dll.config
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\BiSysWeb.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\BiSysWeb.pdb
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\csc.exe
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\csc.exe.config
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\csc.rsp
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\csi.exe
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\csi.exe.config
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\csi.rsp
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.AppContext.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Console.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Globalization.Calendars.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.Compression.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Net.Http.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Net.Sockets.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.ValueTuple.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.XPath.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\vbc.exe
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\vbc.exe.config
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\vbc.rsp
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\VBCSCompiler.exe
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\Antlr3.Runtime.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\Newtonsoft.Json.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Helpers.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Mvc.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Optimization.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Razor.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Razor.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\WebGrease.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Helpers.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Mvc.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Optimization.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.Razor.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\System.Web.WebPages.Razor.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\Newtonsoft.Json.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\Antlr3.Runtime.pdb
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.csproj.AssemblyReference.cache
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.csproj.CoreCompileInputs.cache
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.csproj.CopyComplete
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.dll
+D:\Năm 3\Framework\Github\Framework-UIT\Back-end\BiSysWeb\BiSysWeb\obj\Debug\BiSysWeb.pdb
