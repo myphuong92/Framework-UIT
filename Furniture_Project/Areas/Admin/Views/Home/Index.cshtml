@@ -1,0 +1,270 @@
+﻿
+@{
+    ViewData["Title"] = "Admin Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<nav class="navbar is-light has-shadow">
+    <!-- logo / brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="https://bulma.io/images/bulma-logo.png" style="max-height: 70px" class="py-2 px-2">
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+      <!-- right links -->
+      <div class="navbar-end">
+        <a class="navbar-item">My Account</a>
+        <a class="navbar-item">Shopping Cart (0)</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --------------------------- -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+    </div>
+  </section>
+
+  <!-- Column Size -->
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-full has-background-primary">is-full</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold is-3">
+    <div class="column is-four-fifths has-background-primary">is-four-fifths</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-three-quarters has-background-primary">is-three-quarters</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-two-thirds has-background-primary">is-two-thirds</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-three-fifths has-background-primary">is-three-fifths</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-half has-background-primary">is-half</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-two-fifths has-background-primary">is-two-fifths</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-one-third has-background-primary">is-one-third</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-one-quarter has-background-primary">is-one-quarter</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <div class="columns m-3 has-text-centered	has-text-weight-bold">
+    <div class="column is-one-fifth has-background-primary">is-one-fifth</div>
+    <div class="column has-background-danger">Auto</div>
+    <div class="column has-background-warning">Auto</div>
+  </div>
+
+  <!-- 12 columns -->
+  <div class="columns m-5 has-text-centered	has-text-weight-bold">
+    <div class="column is-5 has-background-primary">5 columns</div>
+    <div class="column is-3 has-background-danger">3 columns</div>
+    <div class="column is-4 has-background-warning">4 columns</div>
+  </div>
+
+  <div class="columns m-5 has-text-centered	has-text-weight-bold">
+    <div class="column is-6 has-background-primary">6 columns</div>
+    <div class="column is-5 has-background-danger">5 columns</div>
+    <div class="column is-1 has-background-warning">1 columns</div>
+  </div>
+
+  <div class="columns m-5 has-text-centered	has-text-weight-bold">
+    <div class="column is-7 has-background-primary">7 columns</div>
+    <div class="column is-2 has-background-warning">2 columns</div>
+    <div class="column is-3 has-background-danger">3 columns</div>
+  </div>
+
+  <div class="columns m-5 has-text-centered	has-text-weight-bold">
+    <div class="column is-8 has-background-primary">8 columns</div>
+    <div class="column is-2 has-background-danger">2 columns</div>
+    <div class="column is-2 has-background-warning">2 columns</div>
+  </div>
+
+  <div class="columns m-5 has-text-centered	has-text-weight-bold">
+    <div class="column is-9 has-background-primary">9 columns</div>
+    <div class="column is-2 has-background-danger">2 columns</div>
+    <div class="column is-1 has-background-warning">1 columns</div>
+  </div>
+
+  <!-- ----------- -->
+
+  <!-- ------------------ -->
+  <div class="tile is-ancestor m-5">
+    <div class="tile is-4 is-vertical is-parent">
+      <div class="tile is-child box has-background-warning">
+        <p class="title">One</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+          vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+      </div>
+      <div class="tile is-child box has-background-primary">
+        <p class="title">Two</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+          vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div class="tile is-child box has-background-info">
+        <p class="title">Three</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+          felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit
+          amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+        <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum,
+          nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas
+          imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim
+          turpis. Sed eget varius ligula, at volutpat tortor.</p>
+        <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat
+          libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta.
+          Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Building a columns layout with Bulma is very simple:
+    1. Add a columns container
+    2. Add as many column elements as you want
+    Each column will have an equal width, no matter the number of columns.
+  -->
+  <div class="columns m-5">
+    <div class="column has-background-info">
+      <h1 class="title">First column</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quibusdam.</p>
+    </div>
+    <div class="column has-background-primary">
+      <h1 class="title">Second column</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit reiciendis aliquid explicabo eaque sequi,
+        nihil dolorum modi sint a voluptatem numquam obcaecati facilis, dolore ratione. Dolorum explicabo adipisci
+        dolorem aperiam totam qui incidunt dignissimos fugiat reprehenderit sed esse dolore nobis asperiores id vero,
+        nostrum quibusdam.</p>
+    </div>
+    <div class="column has-background-warning">
+      <h1 class="title">Third column</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis culpa necessitatibus molestias obcaecati,
+        omnis earum itaque dolorem odit dignissimos similique? Animi perspiciatis veritatis nostrum accusantium quo
+        alias, molestiae nisi dolor eum. Ducimus mollitia commodi impedit deleniti qui repudiandae praesentium
+        accusantium vitae iusto numquam officiis, id nemo distinctio nisi labore ipsam, sit quis sint quod ipsum
+        tempora. Sapiente culpa delectus voluptate!</p>
+    </div>
+    <div class="column has-background-success">
+      <h1 class="title">Fourth column</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo veniam omnis? Nulla sint sit ab quos nam ipsa,
+        odit maxime sapiente ex cum quo voluptate velit reiciendis iure similique!</p>
+    </div>
+  </div>
+
+  <div class="m-5">
+    <h1 class="is-size-1">Hello, Bulma</h1>
+    <h1 class="is-size-2">Hello, Bulma</h1>
+    <h1 class="is-size-3">Hello, Bulma</h1>
+    <h1 class="is-size-4">Hello, Bulma</h1>
+    <h1 class="is-size-5">Hello, Bulma</h1>
+    <h1 class="is-size-6">Hello, Bulma</h1>
+    <h1 class="is-size-7">Hello, Bulma</h1>
+
+  </div>
+
+
+  <h1 class="is-size-1 has-text-centered">Hello, Bulma</h1>
+  <h2 class="is-size-2 has-text-right">Hello, Bulma</h2>
+  <h3 class="is-size-3">Hello, Bulma</h3>
+  <h4 class="is-size-7">Hello, Bulma</h4>
+
+  <p class="is-size-4 is-uppercase is-italic">Hello again</p>
+  <p class="is-lowercase">Hello again</p>
+  <p class="has-text-weight-bold">Hello again</p>
+  <p class="has-text-weight-light">Hello again</p>
+
+  <h2 class="title">Title</h2>
+  <h3 class="subtitle">Subtitle</h3>
+
+  <!-- fonts -->
+
+  <h1 class="is-size-1 has-text-centered">Hello, Bulma</h1>
+  <h1 class="is-size-10 has-text-centered">Hello, Bulma</h1>
+  <h1 class="is-size-9 has-text-centered">Hello, Bulma</h1>
+
+  <h2 class="is-size-2 has-text-right">Hello, Bulma</h2>
+  <h3 class="is-size-3">Hello, Bulma</h3>
+  <h4 class="is-size-7">Hello, Bulma</h4>
+
+  <p class="is-size-4 is-uppercase is-italic">Hello again</p>
+  <p class="is-lowercase">Hello again</p>
+  <p class="has-text-weight-bold">Hello again</p>
+  <p class="has-text-weight-light">Hello again</p>
+
+  <h2 class="title">Title</h2>
+  <h3 class="subtitle">Subtitle</h3>
+
+  <!-- colours -->
+
+  <p class="has-text-primary has-background-light">I'm primary text</p>
+  <p class="has-text-warning has-background-danger">I'm warning text</p>
+  <p class="has-text-danger-light">I'm danger text</p>
+  <p class="has-text-info">I'm info text</p>
+  <p class="has-text-success">I'm success text</p>
+  <p class="has-text-dark">I'm dark text</p>
+  <p class="has-text-light has-background-primary-dark">I'm light text</p>
+
+  <!-- spacing -->
+
+  <h1 class="py-6 my-2">Hello, Bulma</h1>
+  <h1 class="py-1 my-1">Hello, Bulma</h1>
+
+  <h1 class="px-4 mx-6 py-4">Hello, Bulma</h1>
+  <h1 class="mt-4 mr-4 pb-6 pl-3">Hello, Bulma</h1>
+
+  <section class="section">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius odio ad temporibus ab! Quibusdam beatae mollitia
+      quidem facere nihil fuga sint ducimus neque. Quaerat dolores dicta nam sequi, alias reiciendis quas voluptate illo
+      at quis eveniet recusandae corrupti maxime expedita!</p>
+  </section>
+
+  <div class="section">
+    <div class="container">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius odio ad temporibus ab! Quibusdam beatae mollitia
+        quidem facere nihil fuga sint ducimus neque. Quaerat dolores dicta nam sequi, alias reiciendis quas voluptate
+        illo at quis eveniet recusandae corrupti maxime expedita!</p>
+    </div>
+  </div>
+

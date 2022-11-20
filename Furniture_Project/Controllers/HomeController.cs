@@ -18,6 +18,11 @@ namespace Furniture_Project.Controllers
             return View();
         }
 
+        public string Index3()
+        {
+            return "Hello";
+        }
+
         public IActionResult Privacy()
         {
             return View();
