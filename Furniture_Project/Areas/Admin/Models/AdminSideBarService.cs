@@ -94,7 +94,7 @@ namespace Furniture_Project.Areas.Admin.Models
             Items.Add(new SideBarItem()
             {
                 Type = SideBarItemType.Heading,
-                Title = "Chức năng khách"
+                Title = "Chức năng khác"
             });
 
         }
