@@ -1,13 +1,21 @@
+using Furniture_Project.Areas.Admin.Models;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System;
+
 namespace Furniture_Project
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            
+            builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            builder.Services.AddTransient<AdminSideBarService>();
+            builder.Services.AddTransient<IActionContextAccessor, ActionContextAccessor>();
 
             var app = builder.Build();
 
@@ -26,10 +34,18 @@ namespace Furniture_Project
 
             app.UseAuthorization();
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-
+           
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                 name: "areas",
+                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+               );
+                endpoints.MapControllerRoute(
+               name: "default",
+               pattern: "{controller=Home}/{action=Index}/{id?}");
+               
+            });
             app.Run();
         }
     }
