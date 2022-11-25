@@ -413,3 +413,17 @@ D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.
 D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Views\Payment\Index.cshtml.g.cs
 D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Views\ProfileController\Index.cshtml.g.cs
 D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Views\Product\ProductDetail.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\NhanVien\ThemNV.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\DonHang\DangGiao.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\NhanVien\SuaNV.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\KhachHang\XemKH.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\SanPham\ThemSP.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\SanPham\SuaSP.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\KhuyenMai\ThemKM.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\KhuyenMai\SuaKM.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\DanhMuc\ThemDM.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\DanhMuc\SuaDM.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\DonHang\DaGiao.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\DonHang\BiHuy.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\DonHang\TatCa.cshtml.g.cs
+D:\Năm 3\Framework\Github\Framework-UIT\Funiture_Project\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\PhanHoi\XemPhanHoi.cshtml.g.cs

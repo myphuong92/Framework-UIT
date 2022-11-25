@@ -9,5 +9,15 @@ namespace Funiture_Project.Areas.Admin.Controllers
         {
             return View();
         }
+        [Area("Admin")]
+        public IActionResult ThemSP()
+        {
+            return View();
+        }
+        [Area("Admin")]
+        public IActionResult SuaSP()
+        {
+            return View();
+        }
     }
 }
