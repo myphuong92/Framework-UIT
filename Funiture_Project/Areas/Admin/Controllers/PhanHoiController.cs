@@ -9,5 +9,10 @@ namespace Funiture_Project.Areas.Admin.Controllers
         {
             return View();
         }
+        [Area("Admin")]
+        public IActionResult XemPhanHoi()
+        {
+            return View();
+        }
     }
 }

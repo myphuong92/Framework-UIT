@@ -16,11 +16,12 @@
 
     <div class="d-flex justify-content-between">
         <h1 class="h3 mb-2 text-gray-800">Thông tin sản phẩm</h1>
-        <a href="ThemSanPham.html"
+        <a asp-action="ThemSP"
            class="btn btn-primary btn-icon-split float-right">
             <span class="icon text-white-50">
                 <i class="fas fa-plus"></i>
             </span>
+            
             <span class="text">Thêm sản phẩm</span>
         </a>
     </div>
@@ -66,7 +67,7 @@
                             <td>TP.HCM</td>
                             <td>9/10/2022</td>
                             <td class="d-flex justify-content-center">
-                                <a href="SuaSanPham.html">
+                                <a asp-action="SuaSP">
                                     <img src="~/admin/img/bi_pencil-square.svg"
                                          alt="" />
                                 </a>
