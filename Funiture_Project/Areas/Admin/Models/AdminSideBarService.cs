@@ -102,7 +102,7 @@ namespace Funiture_Project.Areas.Admin.Models
             {
                 Type = SideBarItemType.NavItem,
                 Controller = "DonHang",
-                Action = "Index",
+                Action = "DangCho",
                 Area = "Admin",
                 Title = "Thông tin đặt hàng",
                 AwesomeIcon = "fas fa-fw fa-folder"

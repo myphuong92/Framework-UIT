@@ -4,6 +4,7 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 @inject Funiture_Project.Areas.Admin.Models.AdminSideBarService _AdminSideBarService;
+
 @section Sidebar{
     @Html.Raw(_AdminSideBarService.renderHtml())
 }
@@ -19,7 +20,7 @@
             <h1 class="h3 mb-2 text-gray-800">Danh sách đơn hàng</h1>
             <div class="list-group list-group-horizontal">
                 <a style="width: auto !important"
-                   asp-action="Index"
+                   asp-action="DangCho"
                    class="list-group-item list-group-item-action"
                    aria-current="true">
                     Đang chờ
