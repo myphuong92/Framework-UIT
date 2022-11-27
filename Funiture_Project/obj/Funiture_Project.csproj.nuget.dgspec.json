@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hieu Nguyen\\Desktop\\C#.Net\\Final_Project\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj": {}
+    "D:\\Năm 3\\Framework\\Github\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hieu Nguyen\\Desktop\\C#.Net\\Final_Project\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj": {
+    "D:\\Năm 3\\Framework\\Github\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hieu Nguyen\\Desktop\\C#.Net\\Final_Project\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj",
+        "projectUniqueName": "D:\\Năm 3\\Framework\\Github\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj",
         "projectName": "Funiture_Project",
-        "projectPath": "C:\\Users\\Hieu Nguyen\\Desktop\\C#.Net\\Final_Project\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj",
-        "packagesPath": "C:\\Users\\Hieu Nguyen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hieu Nguyen\\Desktop\\C#.Net\\Final_Project\\Framework-UIT\\Funiture_Project\\obj\\",
+        "projectPath": "D:\\Năm 3\\Framework\\Github\\Framework-UIT\\Funiture_Project\\Funiture_Project.csproj",
+        "packagesPath": "C:\\Users\\myphu\\.nuget\\packages\\",
+        "outputPath": "D:\\Năm 3\\Framework\\Github\\Framework-UIT\\Funiture_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hieu Nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\myphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,31 +40,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "AspNetCoreHero.ToastNotification": {
-              "target": "Package",
-              "version": "[1.1.0, )"
-            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[3.1.31, )"
+              "version": "[3.1.30, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.31, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.31, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.31, )"
-            },
-            "PagedList.Core.Mvc": {
-              "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -86,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
