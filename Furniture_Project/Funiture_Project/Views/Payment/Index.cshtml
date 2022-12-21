@@ -5,6 +5,8 @@
     KhachHang khachang = ViewBag.KhachHang;
     List<SanPham> lsSanPham = ViewBag.lsSanPham;
     double tongThanhTien = ViewBag.TongThanhTien;
+
+    List<KhuyenMai> lsKhuyenMai = ViewBag.lsKhuyenMai;
 }
 <link href="~/css/slider-product.css" rel="stylesheet" />
 
@@ -103,6 +105,36 @@
         </div>
 
         <div class="w-full flex items-center justify-end gap-x-[47px]">
+            <div class="w-full">
+                <div class="mb-[12px] px-[20px] shadow text-[20px] h-[55px] shadow items-center hidden lg:flex justify-center bg-[#fff]">
+                    @if (lsKhuyenMai != null)
+                    {
+                        foreach (var i in lsKhuyenMai)
+                        {
+                            if (DateTime.Now >= i.NgayBd && DateTime.Now <= i.NgayKt && tongThanhTien >= i.DinhMuc)
+                            {
+                                <div class="w-[calc(100%-58px)] lg:flex-1">
+                                    Khuyến mãi
+                                </div>
+                                <div class="text-center w-[12.5%] text-[#ee4d2d] font-bold">
+                                    @i.TenKm
+                                </div>
+                                <div class="text-center  w-[12.5%] text-[#ee4d2d] font-bold">
+                                    @(i.PhanTramKm * 100) %
+                                </div>
+                                <div class="text-center w-[12.5%] text-[#ee4d2d] font-bold">
+                                    @{
+                                        var tienGiam = tongThanhTien * i.PhanTramKm;
+                                    }
+                                    @tienGiam.ToString("#,##0") đ
+                                </div>
+                            }
+                            break;
+                        }
+                    }
+                </div>
+            </div>
+            
         </div>
     </div>
 
@@ -120,7 +152,22 @@
             <div class="flex text-[30px] gap-x-2 items-center">
                 <div class="text-[14px] lg:text-[16px]">Tổng thanh toán: </div>
                 <span class="text-[18px] lg:text-[24px] text-[#ee4d2d] font-semibold">
-                    <span class="sum-cart">@tongThanhTien</span>đ
+                    @{
+                        @if (lsKhuyenMai != null)
+                        {
+                            foreach (var i in lsKhuyenMai)
+                            {
+                                if (DateTime.Now >= i.NgayBd && DateTime.Now <= i.NgayKt && tongThanhTien >= i.DinhMuc)
+                                {
+                                    var tienGiam = tongThanhTien * i.PhanTramKm;
+                                    <div class="sum-cart">
+                                        <span class="sum-cart">@((tongThanhTien - tienGiam).ToString("#,##0")) đ</span>
+                                    </div>
+                                }
+                                break;
+                            }
+                        }
+                    }  
                 </span>
             </div>
         </div>
