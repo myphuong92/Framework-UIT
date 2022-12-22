@@ -163,6 +163,10 @@ namespace Funiture_Project.Controllers
             ViewBag.lsSanPham = lsSanPham;
             ViewBag.KhachHang = khachhang;
             ViewBag.TongThanhTien = tong;
+
+            var lsKhuyenMai = _context.KhuyenMai.AsNoTracking()
+                    .Where(x => x.NgayBd <= DateTime.Now && x.NgayKt >= DateTime.Now).ToList();
+            ViewBag.lsKhuyenMai = lsKhuyenMai;
             return View();
         }
         [Route("/Payment/InsertHoaDon")]
