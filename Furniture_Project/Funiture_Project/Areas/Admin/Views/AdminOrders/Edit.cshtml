@@ -12,7 +12,21 @@
     _AdminSideBarService.setActive("AdminOrders", "Index", "Admin");
 }
 @{
+    List<SanPham> lsSanPham = ViewBag.lsSP;
+    List<Cthd> lsCTHD = ViewBag.lsCT;
+    double sum = 0;
+
     var item = Model;
+
+    string optionTTTT = Model.Tttt;
+    if (item.Tttt.Contains("Chưa thanh toán"))
+    {
+        optionTTTT = "Đã thanh toán";
+    }
+    else
+    {
+        optionTTTT = "Chưa thanh toán";
+    }
 }
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -27,110 +41,164 @@
 
     <div class="mt-10"></div>
 
-    <!-- DataTales Example -->
-    <div class="container gap-3">
-        <!--**************************************-->
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MaHd" />
+    <div class="d-flex">
+        <!-- DataTales Example -->
+        <div class="container gap-3">
 
-            <!--*********** Tình trạng đơn hàng **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="Ttdh">Tình trạng đơn hàng</label>
-                <select class="col-4 input-group form-control bg-white custom-select" asp-for="Ttdh">
-                    <option selected>@item.Ttdh</option>
-                    <option value="1">Đang chờ</option>
-                    <option value="2">Đang giao</option>
-                    <option value="3">Đã giao</option>
-                    <option value="4">Bị hủy</option>
-                </select>
-                <span asp-validation-for="Ttdh" class="text-danger"></span>
+            <div class="modal-body row">
+
+                <!--**************************************-->
+                <form asp-action="Edit" class="col-md-7">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="MaHd" />
+
+                    <!--*********** Tình trạng đơn hàng **************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="Ttdh">Tình trạng đơn hàng</label>
+                        <select class="col-5 input-group form-control bg-white custom-select" asp-for="Ttdh">
+                            <option selected>@item.Ttdh</option>
+                            <option value="Đang chờ">Đang chờ</option>
+                            <option value="Đang giao">Đang giao</option>
+                            <option value="Đã giao">Đã giao</option>
+                            <option value="Bị hủy">Bị hủy</option>
+                        </select>
+                        <span asp-validation-for="Ttdh" class="text-danger"></span>
+                    </div>
+
+                    <!--*********** Tình trạng thanh toán **************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="Tttt">Tình trạng đơn hàng</label>
+                        <select class="col-5 input-group form-control bg-white custom-select" asp-for="Tttt">
+                            <option selected>@item.Tttt</option>
+                            <option value="@optionTTTT">@optionTTTT</option>
+                        </select>
+                        <span asp-validation-for="Tttt" class="text-danger"></span>
+                    </div>
+
+                    <!--*********** Mã khách hàng **************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="MaKh">Mã khách hàng</label>
+                        <input class="col-5 form-control bg-white" asp-for="MaKh" disabled />
+                        <span asp-validation-for="MaKh" class="text-danger"></span>
+                    </div>
+
+                    <!--************ Ngày Hóa đơn **************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="NgayHd">Ngày Hóa đơn</label>
+                        <input class="col-5 form-control bg-white" asp-for="NgayHd" />
+                        <span asp-validation-for="NgayHd" class="text-danger"></span>
+                    </div>
+
+                    <!--************ Ngày Giao hàng**************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="NgayGh">Ngày Giao hàng</label>
+                        <input class="col-5 form-control bg-white" asp-for="NgayGh" />
+                        <span asp-validation-for="NgayGh" class="text-danger"></span>
+                    </div>
+
+                    <!--************ Sđt Khách hàng **************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="Sdt">Sđt Khách hàng</label>
+                        <input class="col-5 form-control bg-white" asp-for="Sdt" disabled />
+                        <span asp-validation-for="Sdt" class="text-danger"></span>
+                    </div>
+
+                    <!--************ Địa chỉ **************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="DiaChi">Địa chỉ</label>
+                        <input class="col-5 form-control bg-white" min="0" asp-for="DiaChi" disabled />
+                        <span asp-validation-for="DiaChi" class="text-danger"></span>
+                    </div>
+
+                    <!--************ Thành phố **************-->
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="ThanhPho">Thành phố</label>
+                        <input class="col-5 form-control bg-white" asp-for="ThanhPho" disabled />
+                        <span asp-validation-for="ThanhPho" class="text-danger"></span>
+                    </div>
+
+                    <!--************ Trị Giá HD **************-->
+                    @{
+                        var triGia = item.TriGia.ToString("#,##0");
+                        Console.WriteLine(triGia);
+                    }
+                    <div class="form-group row mb-4">
+                        <label class="col-5 col-form-label" asp-for="TriGia">Trị Giá HD</label>
+                        <input class="col-5 form-control bg-white"
+                               inputmode="decimal"
+                               min="0"
+                               step=".01" asp-for="TriGia" disabled value="@(item.TriGia.ToString("#,##0"))"/>
+                        <span asp-validation-for="TriGia" class="text-danger"></span>
+                    </div>
+
+                    <hr class="my-12" />
+
+                    <!--------------------Button--------------------------->
+                    <div class="d-grid d-flex justify-content-between">
+                        <!------ Button Quay Lại ------>
+                        <a asp-action="Index" class="form-group btn btn-secondary btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span class="text">Quay lại</span>
+                        </a>
+
+                        <!------ Button Lưu ------>
+                        <a class="form-group btn btn-success btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <input type="submit" value="Lưu thông tin" class="btn btn-success" />
+                        </a>
+                    </div>
+                </form>
+
+                <!-- CTHD -->
+                <div class="col-md-5">
+                    <div class="border border-2 rounded p-3 mb-4">
+                    <div class="order-1-product mb-4">
+                            @if (lsCTHD != null && lsCTHD.Count() > 0)
+                            {
+                                foreach (var chitiet in lsCTHD)
+                                {
+                                    foreach(var sp in lsSanPham)
+                                    {
+                                        if(chitiet.MaSp == sp.MaSp)
+                                        {
+                                            <div class="name-and-sumprice d-flex justify-content-between">
+                                                <span class="h5 text-primary">@sp.TenSp</span>
+                                                <span>@chitiet.DonGia.ToString("#,##0") đ</span>
+                                            </div>
+                                            <div class="price-per-product d-flex mb-2">
+                                                <span class="mr-2">Đơn giá: </span>
+                                                <span>@sp.Gia.ToString("#,##0") đ</span>
+                                            </div>
+                                            <div class="quantity d-flex mb-2">
+                                                <span class="mr-2">Số lượng:</span>
+                                                <span>@chitiet.SoLuong</span>
+                                            </div>
+                                        }
+                                        sum += chitiet.DonGia;
+                                    }
+                                }
+                            }
+                        
+                    </div>
+
+                    <div class="total-price p-3 mb-2 bg-dark text-white bg-gradient rounded">
+                        <div class="d-flex justify-content-between">
+                            <span class="h5">Tổng</span>
+                            <span id="od-total-price">@sum.ToString("#,##0") đ</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                
             </div>
 
-            <!--*********** Tình trạng thanh toán **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="Tttt">Tình trạng đơn hàng</label>
-                <select class="col-4 input-group form-control bg-white custom-select" asp-for="Tttt">
-                    <option selected>@item.Tttt</option>
-                    <option value="1">Chưa thanh toán</option>
-                    <option value="2">Đã thanh toán</option>
-                </select>
-                <span asp-validation-for="Tttt" class="text-danger"></span>
-            </div>
-            <!--*********** Mã khách hàng **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="MaKh">Mã khách hàng</label>
-                <input class="col-4 form-control bg-white" asp-for="MaKh" disabled/>
-                <span asp-validation-for="MaKh" class="text-danger"></span>
-            </div>
-
-            <!--************ Ngày Hóa đơn **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="NgayHd">Ngày Hóa đơn</label>
-                <input class="col-4 form-control bg-white" asp-for="NgayHd" />
-                <span asp-validation-for="NgayHd" class="text-danger"></span>
-            </div>
-
-            <!--************ Ngày Giao hàng**************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="NgayGh">Ngày Giao hàng</label>
-                <input class="col-4 form-control bg-white" asp-for="NgayGh" />
-                <span asp-validation-for="NgayGh" class="text-danger"></span>
-            </div>
-
-            <!--************ Sđt Khách hàng **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="Sdt">Sđt Khách hàng</label>
-                <input class="col-4 form-control bg-white" asp-for="Sdt" disabled/>
-                <span asp-validation-for="Sdt" class="text-danger"></span>
-            </div>
-
-            <!--************ Địa chỉ **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="DiaChi">Địa chỉ</label>
-                <input class="col-4 form-control bg-white" min="0" asp-for="DiaChi" disabled/>
-                <span asp-validation-for="DiaChi" class="text-danger"></span>
-            </div>
-
-            <!--************ Thành phố **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="ThanhPho">Thành phố</label>
-                <input class="col-4 form-control bg-white" asp-for="ThanhPho" disabled/>
-                <span asp-validation-for="ThanhPho" class="text-danger"></span>
-            </div>
-
-            <!--************ Trị Giá HD **************-->
-            <div class="form-group row mb-4">
-                <label class="col-2 col-form-label" asp-for="TriGia">Trị Giá HD</label>
-                <input class="col-4 form-control bg-white" type="number"
-                       inputmode="decimal"
-                       min="0"
-                       step=".01" asp-for="TriGia" disabled/>
-                <span asp-validation-for="TriGia" class="text-danger"></span>
-            </div>
-
-            <hr class="my-12" />
-
-            <!--------------------Button--------------------------->
-            <div class="d-grid d-flex justify-content-between">
-                <!------ Button Quay Lại ------>
-                <a asp-action="Index" class="form-group btn btn-secondary btn-icon-split">
-                    <span class="icon text-white-50">
-                        <i class="fas fa-arrow-left"></i>
-                    </span>
-                    <span class="text">Quay lại</span>
-                </a>
-
-                <!------ Button Lưu ------>
-                <a class="form-group btn btn-success btn-icon-split">
-                    <span class="icon text-white-50">
-                        <i class="fas fa-check"></i>
-                    </span>
-                    <input type="submit" value="Lưu thông tin" class="btn btn-success" />
-                </a>
-            </div>
-
-        </form>
+        </div>
     </div>
+
 </div>
 <!--------------------------------------------------------------------->

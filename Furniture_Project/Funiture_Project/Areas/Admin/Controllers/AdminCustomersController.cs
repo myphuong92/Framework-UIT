@@ -65,56 +65,56 @@ namespace Funiture_Project.Areas.Admin.Controllers
             return View(khachHang);
         }
 
-        // GET: Admin/AdminCustomers/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        //// GET: Admin/AdminCustomers/Edit/5
+        //public async Task<IActionResult> Edit(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var khachHang = await _context.KhachHang.FindAsync(id);
-            if (khachHang == null)
-            {
-                return NotFound();
-            }
-            return View(khachHang);
-        }
+        //    var khachHang = await _context.KhachHang.FindAsync(id);
+        //    if (khachHang == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(khachHang);
+        //}
 
-        // POST: Admin/AdminCustomers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MaKh,HoTen,Email,Password,Sdt,DiaChi,ThanhPho,NgayTao,Quyen,GioiTinh")] KhachHang khachHang)
-        {
-            if (id != khachHang.MaKh)
-            {
-                return NotFound();
-            }
+        //// POST: Admin/AdminCustomers/Edit/5
+        //// To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        //// more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Edit(int id, [Bind("MaKh,HoTen,Email,Password,Sdt,DiaChi,ThanhPho,NgayTao,Quyen,GioiTinh")] KhachHang khachHang)
+        //{
+        //    if (id != khachHang.MaKh)
+        //    {
+        //        return NotFound();
+        //    }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(khachHang);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!KhachHangExists(khachHang.MaKh))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(khachHang);
-        }
+        //    if (ModelState.IsValid)
+        //    {
+        //        try
+        //        {
+        //            _context.Update(khachHang);
+        //            await _context.SaveChangesAsync();
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!KhachHangExists(khachHang.MaKh))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+        //        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(khachHang);
+        //}
 
         // GET: Admin/AdminCustomers/Delete/5
         public async Task<IActionResult> Delete(int? id)

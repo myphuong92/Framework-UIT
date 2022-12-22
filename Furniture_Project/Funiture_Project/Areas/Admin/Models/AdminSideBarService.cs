@@ -106,7 +106,7 @@ namespace Funiture_Project.Areas.Admin.Models
                 AwesomeIcon = "fas fa-percentage"
             });
 
-            /*Items.Add(new SideBarItem() { Type = SideBarItemType.Divider });
+            Items.Add(new SideBarItem() { Type = SideBarItemType.Divider });
             Items.Add(new SideBarItem()
             {
                 Type = SideBarItemType.Heading,
@@ -140,7 +140,7 @@ namespace Funiture_Project.Areas.Admin.Models
                 Area = "Admin",
                 Title = "Thống kê",
                 AwesomeIcon = "fas fa-chart-bar"
-            });*/
+            });
 
         }
         public void setActive(string Controller, string Action, string Area)
