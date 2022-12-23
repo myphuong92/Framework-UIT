@@ -1,14 +1,19 @@
 ﻿@inject Funiture_Project.Areas.Admin.Models.AdminSideBarService _AdminSideBarService;
+@using Funiture_Project.Models;
 @{
     ViewData["Title"] = "DangCho_Update";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    HoaDon hoadon = ViewBag.HoaDon;
+    KhachHang khachhang = ViewBag.KhachHang;
+    List<Cthd> cthd = ViewBag.CTHD;
+    List<SanPham> lsSanPham = ViewBag.lsSanPham;
 }
 @section Sidebar{
     @Html.Raw(_AdminSideBarService.renderHtml())
 }
-    @{
+    @*@{
     _AdminSideBarService.setActive("DonHang", "DangCho", "Admin");
-}
+}*@
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <!-- Page Heading -->
@@ -36,7 +41,8 @@
                                class="col form-control bg-white"
                                type="text"
                                name="MaHD"
-                               id="MaHD" />
+                               id="MaHD"
+                               value="@hoadon.MaHd" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="TenKH">Tên khách hàng</label>
@@ -44,115 +50,133 @@
                                class="col form-control bg-white"
                                type="text"
                                name="TenKH"
-                               id="TenKH" />
+                               id="TenKH"
+                               value="@khachhang.HoTen" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="Sdt">Số điện thoại</label>
                         <input class="col form-control bg-white"
                                type="text"
                                name="Sdt"
-                               id="Sdt" />
+                               id="Sdt"
+                               value="@hoadon.Sdt" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="Diachi">Địa chỉ</label>
                         <input class="col form-control bg-white"
                                type="text"
                                name="Diachi"
-                               id="Diachi" />
+                               id="Diachi"
+                               value="@hoadon.DiaChi" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="Thanhpho">Thành phố</label>
                         <input class="col form-control bg-white"
                                type="text"
                                name="Thanhpho"
-                               id="Thanhpho" />
+                               id="Thanhpho"
+                               value="@hoadon.ThanhPho" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="email">Email</label>
                         <input class="col form-control bg-white"
                                type="email"
                                name="email"
-                               id="email" />
+                               id="email"
+                               value="@khachhang.Email" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="Ngdathang">Ngày đặt hàng</label>
                         <input class="col form-control bg-white"
                                type="date"
                                name="Ngdathang"
-                               id="Ngdathang" />
+                               id="Ngdathang"
+                               value="@hoadon.NgayHd" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="Nggiaohang">Ngày giao hàng</label>
                         <input class="col form-control bg-white"
                                type="date"
                                name="Nggiaohang"
-                               id="Nggiaohang" />
+                               id="Nggiaohang"
+                               value="@hoadon.NgayGh" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="TTDH">Trạng thái đơn hàng</label>
                         <input class="col form-control bg-white"
                                type="text"
                                name="TTDH"
-                               id="TTDH" />
+                               id="TTDH"
+                               value="@hoadon.Ttdh" />
                     </div>
                     <div class="row mb-4">
                         <label class="col-5" for="TTTT">Trạng thái thanh toán</label>
                         <input class="col form-control bg-white"
                                type="text"
                                name="TTTT"
-                               id="TTTT" />
+                               id="TTTT"
+                               value="@hoadon.Tttt" />
                     </div>
-                    <button style="width: 100%"
-                            type="button"
-                            class="col btn btn-warning btn-lg">
-                        Xác nhận đơn hàng
-                    </button>
+                    @if (hoadon.Ttdh.Equals("Đang chờ"))
+                    {
+                        <a style="width: 100%"
+                       asp-action="CapNhatTrangThai" asp-route-mahd="@hoadon.MaHd"
+                       class="col btn btn-warning btn-lg">
+                            Xác nhận đơn hàng
+                        </a>
+                    }
+                    else
+                    {
+                        if (hoadon.Ttdh.Equals("Đang giao"))
+                        {
+                            <a style="width: 100%"
+                       asp-action="CapNhatTrangThai" asp-route-mahd="@hoadon.MaHd"
+                       class="col btn btn-warning btn-lg">
+                                Đã giao hàng
+                            </a>
+                        }
+                    }
+                    
                 </div>
                 <div class="col-md-6">
                     <div class="border border-2 rounded p-3 mb-4">
-                        <div class="order-1-product mb-4">
-                            <div class="name-and-sumprice d-flex justify-content-between">
-                                <span class="h5 text-primary">Ghế làm việc cao cấp</span>
-                                <span>1.000.000đ</span>
-                            </div>
-                            <div class="price-per-product d-flex mb-2">
-                                <span class="mr-2">Đơn giá: </span>
-                                <span>1.000.000đ</span>
-                            </div>
-                            <div class="quantity d-flex mb-2">
-                                <span class="mr-2">Số lượng:</span>
-                                <span>1</span>
-                            </div>
-                        </div>
+                        @for (int i = 0; i < cthd.Count; i++)
+                        {
+                            double thanhtien = cthd[i].DonGia * cthd[i].SoLuong;
+                            <div class="order-1-product mb-4">
+                                <div class="name-and-sumprice d-flex justify-content-between">
+                                    <span class="h5 text-primary">@lsSanPham[i].TenSp</span>
+                                    <span>@thanhtien.ToString("#,##0")đ</span>
+                                </div>
+                                <div class="price-per-product d-flex mb-2">
+                                    <span class="mr-2">Đơn giá: </span>
 
-                        <div class="order-1-product mb-4">
-                            <div class="name-and-sumprice d-flex justify-content-between">
-                                <span class="h5 text-primary">Bàn làm việc văn phòng</span>
-                                <span>2.600.000đ</span>
+                                    <span>@cthd[i].DonGia.ToString("#,##0")đ</span>
+                                </div>
+                                <div class="quantity d-flex mb-2">
+                                    <span class="mr-2">Số lượng:</span>
+                                    <span>@cthd[i].SoLuong</span>
+                                </div>
                             </div>
-                            <div class="price-per-product d-flex mb-2">
-                                <span class="mr-2">Đơn giá: </span>
-                                <span id="od-price">1.300.000</span>
-                            </div>
-                            <div class="quantity d-flex mb-2">
-                                <span class="mr-2">Số lượng:</span>
-                                <span id="od-quantity">2</span>
-                            </div>
-                        </div>
+                        }
 
                         <div class="total-price p-3 mb-2 bg-dark text-white bg-gradient rounded">
                             <div class="d-flex justify-content-between">
                                 <span class="h5">Tổng</span>
-                                <span id="od-total-price">3.600.000đ</span>
+                                <span id="od-total-price">@hoadon.TriGia.ToString("#,##0")đđ</span>
                             </div>
                         </div>
                     </div>
                     <div class="cancel-button text-center">
-                        <button style="width: 93%"
-                                type="button"
-                                class="col btn btn-danger btn-lg">
-                            Hủy hóa đơn
-                        </button>
+                        @if (hoadon.Ttdh.Equals("Bị hủy") == false)
+                        {
+                            <a style="width: 93%"
+                           asp-action="HuyHoaDon" asp-route-mahd="@hoadon.MaHd"
+                           class="col btn btn-danger btn-lg">
+                                Hủy hóa đơn
+                            </a>
+                        }
+
                     </div>
                 </div>
             </div>
