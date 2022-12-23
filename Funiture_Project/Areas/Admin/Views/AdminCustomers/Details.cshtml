@@ -1,73 +1,72 @@
 ﻿@model Funiture_Project.Models.KhachHang
+@inject Funiture_Project.Areas.Admin.Models.AdminSideBarService _AdminSideBarService;
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết KH";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+@section Sidebar{
+    @Html.Raw(_AdminSideBarService.renderHtml())
+}
+@{
+    _AdminSideBarService.setActive("AdminCustomers", "Index", "Admin");
+}
 
-<h1>Details</h1>
-
-<div>
-    <h4>KhachHang</h4>
+<div class="container-fluid">
+    <h1>Chi tiết khách hàng @Html.DisplayFor(model => model.MaKh)</h1>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HoTen)
+        <dt class="col-sm-2">
+            Họ tên
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.HoTen)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+        <dt class="col-sm-2">
+            Email
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Password)
+        <dt class="col-sm-2">
+            Số điện thoại
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Sdt)
-        </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Sdt)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DiaChi)
+        <dt class="col-sm-2">
+            Địa chỉ
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DiaChi)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ThanhPho)
+        <dt class="col-sm-2">
+            Thành phố
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ThanhPho)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NgayTao)
+        <dt class="col-sm-2">
+            Ngày tạo
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.NgayTao)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quyen)
+        <dt class="col-sm-2">
+            Giới tính
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quyen)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.GioiTinh)
-        </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.GioiTinh)
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.MaKh">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaKh" />
+        <a asp-action="Index" class="form-group btn btn-secondary btn-icon-split">
+            <span class="icon text-white-50">
+                <i class="fas fa-arrow-left"></i>
+            </span>
+            <span class="text">Quay lại</span>
+        </a>
+    </form>
 </div>

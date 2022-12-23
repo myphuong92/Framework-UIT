@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Funiture_Project.Models;
 using AspNetCoreHero.ToastNotification.Abstractions;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Hosting;
-using System.IO;
+using System.Collections.Generic;
 using ExcelDataReader;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Funiture_Project.Areas.Admin.Controllers
 {
@@ -53,50 +53,13 @@ namespace Funiture_Project.Areas.Admin.Controllers
         // GET: Admin/AdminProducts/Create
         public IActionResult Create()
         {
-            return View();
-        }
+            ViewData["DanhMuc"] = new SelectList(_context.DanhMucSp, "MaDm", "TenDm");
 
-        [HttpPost]
-        public IActionResult ImportExcel(IFormFile file, [FromServices] IHostingEnvironment hostingEnvironment)
-        {
-            string fileName = $"{hostingEnvironment.WebRootPath}\\files\\{file.Name}";
-            using (FileStream fileStream = System.IO.File.Create(fileName))
-            {
-                file.CopyTo(fileStream);
-                fileStream.Flush();
-            }
-            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
-            using (var stream = System.IO.File.Open(fileName, FileMode.Open, FileAccess.Read))
-            {
-                using(var reader = ExcelReaderFactory.CreateReader(stream))
-                {
-                    while(reader.Read())
-                    {
-                        SanPham sp = new SanPham
-                        {
-                            TenSp = reader.GetValue(0).ToString(),
-                            Nsx = reader.GetValue(1).ToString(),
-                            ThuongHieu = reader.GetValue(2).ToString(),
-                            Gia = double.Parse(reader.GetValue(3).ToString()),
-                            TongSl = int.Parse(reader.GetValue(4).ToString()),
-                            HinhAnh = reader.GetValue(5).ToString(),
-                            MaDm = reader.GetValue(6).ToString(),
-                            ChiTiet = reader.GetValue(7).ToString()
-                        };
-                        _context.Add(sp);
-                    }
-                    try
-                    {
-                        _context.SaveChanges();
-                        _notifyService.Success("Import thành công");
-                    }
-                    catch(Exception e)
-                    {
-                        _notifyService.Error(e.Message);
-                    }
-                }
-            }
-            return RedirectToAction(nameof(Index));
+            SelectList NsxList = new SelectList(_context.SanPham.Select(s => s.Nsx).Distinct().ToList(), "MaSp", "Nsx");
+            ViewData["NuocSx"] = NsxList;
+
+
+            return View();
         }
 
         // POST: Admin/AdminProducts/Create
@@ -113,6 +76,11 @@ namespace Funiture_Project.Areas.Admin.Controllers
                 _notifyService.Success("Thêm thành công");
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DanhMuc"] = new SelectList(_context.DanhMucSp, "MaDm", "TenDm", sanPham.MaDm);
+
+            SelectList NsxList = new SelectList(_context.SanPham.Select(s => s.Nsx).Distinct().ToList(), "MaSp", "Nsx", sanPham.Nsx);
+            ViewData["NuocSx"] = NsxList;
+
             return View(sanPham);
         }
 
@@ -129,6 +97,7 @@ namespace Funiture_Project.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            ViewData["DanhMuc"] = new SelectList(_context.DanhMucSp, "MaDm", "TenDm", sanPham.MaDm);
             return View(sanPham);
         }
 
@@ -166,6 +135,7 @@ namespace Funiture_Project.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DanhMuc"] = new SelectList(_context.DanhMucSp, "MaDm", "TenDm", sanPham.MaDm);
             return View(sanPham);
         }
 
@@ -204,5 +174,47 @@ namespace Funiture_Project.Areas.Admin.Controllers
             return _context.SanPham.Any(e => e.MaSp == id);
         }
 
+        [HttpPost]
+        public IActionResult ImportExcel(IFormFile file, [FromServices] IHostingEnvironment hostingEnvironment)
+        {
+            string fileName = $"{hostingEnvironment.WebRootPath}\\files\\{file.Name}";
+            using (FileStream fileStream = System.IO.File.Create(fileName))
+            {
+                file.CopyTo(fileStream);
+                fileStream.Flush();
+            }
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+            using (var stream = System.IO.File.Open(fileName, FileMode.Open, FileAccess.Read))
+            {
+                using (var reader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    while (reader.Read())
+                    {
+                        SanPham sp = new SanPham
+                        {
+                            TenSp = reader.GetValue(0).ToString(),
+                            Nsx = reader.GetValue(1).ToString(),
+                            ThuongHieu = reader.GetValue(2).ToString(),
+                            Gia = double.Parse(reader.GetValue(3).ToString()),
+                            TongSl = int.Parse(reader.GetValue(4).ToString()),
+                            HinhAnh = reader.GetValue(5).ToString(),
+                            MaDm = reader.GetValue(6).ToString(),
+                            ChiTiet = reader.GetValue(7).ToString()
+                        };
+                        _context.Add(sp);
+                    }
+                    try
+                    {
+                        _context.SaveChanges();
+                        _notifyService.Success("Import thành công");
+                    }
+                    catch (Exception e)
+                    {
+                        _notifyService.Error(e.Message);
+                    }
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

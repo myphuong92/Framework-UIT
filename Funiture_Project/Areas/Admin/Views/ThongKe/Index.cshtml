@@ -15,7 +15,8 @@
     <div class="col-sm-6">
         <div class="cart">
             <div class="card-header">
-                Doanh thu năm 2022
+                <h1 class="h3 mb-2 text-gray-800">Doanh thu năm 2022</h1>
+
             </div>
             <div class="card-body">
                 <canvas class="my-4 h-25" id="myChart"></canvas>
@@ -46,7 +47,7 @@
     new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9','10', '11', '12'],
+            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
             datasets: [{
                 label: 'DOANH THU',
                 data: lsdata,

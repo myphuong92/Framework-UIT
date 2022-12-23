@@ -18,6 +18,7 @@
 
     <div class="d-flex justify-content-between">
         <h1 class="h3 mb-2 text-gray-800">Thông tin sản phẩm</h1>
+
         <form asp-controller="AdminProducts" asp-action="ImportExcel" method="post" enctype="multipart/form-data">
             <input type="file" name="file" />
             <button type="submit">
@@ -33,7 +34,6 @@
 
             <span class="text">Thêm sản phẩm</span>
         </a>
-
     </div>
 
     <hr class="my-12" />

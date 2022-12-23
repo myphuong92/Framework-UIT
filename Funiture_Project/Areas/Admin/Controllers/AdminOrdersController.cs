@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Funiture_Project.Models;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace Funiture_Project.Areas.Admin.Controllers
 {
@@ -78,6 +79,25 @@ namespace Funiture_Project.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
+            var lsCTHD = _context.Cthd.AsNoTracking()
+                .Where(x => x.MaHd == hoaDon.MaHd)
+                .ToList();
+
+            var lsSanPham = _context.SanPham.AsNoTracking().ToList();
+            List<SanPham> ls_SP_in_CTHD = new List<SanPham>();
+            foreach (var a in lsCTHD)
+            {
+                foreach (var b in lsSanPham)
+                {
+                    if (a.MaSp == b.MaSp)
+                    {
+                        ls_SP_in_CTHD.Add(b);
+                    }
+                }
+            }
+            ViewBag.lsSP = ls_SP_in_CTHD;
+            ViewBag.lsCT = lsCTHD;
             return View(hoaDon);
         }
 
@@ -113,6 +133,33 @@ namespace Funiture_Project.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            // CTHD
+            /*var order = await _context.HoaDon
+                .FirstOrDefaultAsync(m => m.MaHd == id);
+            if (order == null)
+            {
+                return NotFound();
+            }*/
+
+            var lsCTHD = _context.Cthd.AsNoTracking()
+                .Where(x => x.MaHd == hoaDon.MaHd)
+                .ToList();
+
+            var lsSanPham = _context.SanPham.AsNoTracking().ToList();
+            List<SanPham> ls_SP_in_CTHD = new List<SanPham>();
+            foreach(var a in lsCTHD)
+            {
+                foreach (var b in lsSanPham)
+                {
+                    if(a.MaSp == b.MaSp)
+                    {
+                        ls_SP_in_CTHD.Add(b);
+                    }
+                }
+            }
+            ViewBag.lsSP= ls_SP_in_CTHD;
+            ViewBag.lsCT = lsCTHD;
             return View(hoaDon);
         }
 

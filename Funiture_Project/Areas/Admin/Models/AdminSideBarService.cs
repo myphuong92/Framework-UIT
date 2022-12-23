@@ -96,17 +96,17 @@ namespace Funiture_Project.Areas.Admin.Models
                 Title = "Quản lý danh mục",
                 AwesomeIcon = "fas fa-boxes"
             });
-            /*Items.Add(new SideBarItem()
+            Items.Add(new SideBarItem()
             {
                 Type = SideBarItemType.NavItem,
-                Controller = "KhuyenMai",
+                Controller = "AdminDiscounts",
                 Action = "Index",
                 Area = "Admin",
                 Title = "Quản lý khuyến mãi",
                 AwesomeIcon = "fas fa-percentage"
-            });*/
+            });
 
-            /*Items.Add(new SideBarItem() { Type = SideBarItemType.Divider });
+            Items.Add(new SideBarItem() { Type = SideBarItemType.Divider });
             Items.Add(new SideBarItem()
             {
                 Type = SideBarItemType.Heading,
@@ -122,16 +122,16 @@ namespace Funiture_Project.Areas.Admin.Models
                 AwesomeIcon = "fas fa-fw fa-folder"
 
             });
-            Items.Add(new SideBarItem()
-            {
-                Type = SideBarItemType.NavItem,
-                Controller = "PhanHoi",
-                Action = "Index",
-                Area = "Admin",
-                Title = "Phản hồi",
-                AwesomeIcon = "fas fa-comment-dots"
+            //Items.Add(new SideBarItem()
+            //{
+            //    Type = SideBarItemType.NavItem,
+            //    Controller = "PhanHoi",
+            //    Action = "Index",
+            //    Area = "Admin",
+            //    Title = "Phản hồi",
+            //    AwesomeIcon = "fas fa-comment-dots"
 
-            });*/
+            //});
             Items.Add(new SideBarItem()
             {
                 Type = SideBarItemType.NavItem,
