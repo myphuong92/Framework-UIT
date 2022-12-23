@@ -43,7 +43,7 @@
             <img class="w-full object-cover" src="@Model.HinhAnh" alt="" />
         </div>
         <div class="gap-y-3">
-            <div class="font-bold lg:text-[44px] text-[24px]">Ghế làm việc</div>
+            <div class="font-bold lg:text-[44px] text-[24px]">@Model.TenSp</div>
 
             <div class="leading-[180%] pt-[10px]">
                 <div class="font-medium text-[#AD7E5C] lg:text-[18px] text-[14px]">
@@ -101,7 +101,7 @@
                     <input name="amount" value="1" class="num1 text-center w-[45px] border border-[rgba(0,0,0,0.09)]" type="hidden" min="1"
                            id="Quantity">
 
-                    <button class="cursor-pointer bg-[#518581] text-center py-4 font-semibold lg:text-[18px] text-[14px] text-[#F9F9F9]" style="width: 90%;">
+                    <button class="cursor-pointer bg-[#518581] text-center py-4 font-semibold lg:text-[18px] text-[14px] text-[#F9F9F9]" style="width: 100%;">
                         Mua ngay
                     </button>
                 </form>
@@ -109,7 +109,7 @@
                 <form asp-controller="CartInfo" asp-action="AddToCart" asp-route-masp="@Model.MaSp">
                     <input name="amount" value="1" class="num2 text-center w-[45px] border border-[rgba(0,0,0,0.09)]" type="hidden" min="1"
                            id="Quantity">
-                    <button class="cursor-pointer text-center py-4 border-2 border-[#518581] text-[#518581] font-semibold lg:text-[18px] text-[14px]" style="width: 90%;">
+                    <button class="cursor-pointer text-center py-4 border-2 border-[#518581] text-[#518581] font-semibold lg:text-[18px] text-[14px]" style="width: 100%;">
                         Thêm vào giỏ hàng
                     </button>
                 </form>
@@ -176,6 +176,7 @@
         num.value++;
         num1.value++;
         num2.value++;
+
     });
 
     minus.addEventListener("click", () => {

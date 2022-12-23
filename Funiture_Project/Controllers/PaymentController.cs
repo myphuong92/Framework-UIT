@@ -68,10 +68,15 @@ namespace Funiture_Project.Controllers
             int makm = -1;
             foreach (var item in khuyenmai)
             {
-                if (tong * item.PhanTramKm > item.DinhMuc)
-                    tiengiam = item.DinhMuc;
-                else
+                if (tong * item.PhanTramKm <= item.ToiDa)
+                {
                     tiengiam = tong * item.PhanTramKm;
+                }
+                else
+                {
+                    tiengiam = item.ToiDa;
+                }
+
                 if (tiengiam > max_tiengiam)
                 {
                     max_tiengiam = tiengiam;
@@ -116,10 +121,15 @@ namespace Funiture_Project.Controllers
             int makm = -1;
             foreach (var item in khuyenmai)
             {
-                if (tong * item.PhanTramKm > item.DinhMuc)
-                    tiengiam = item.DinhMuc;
-                else
+                if (tong * item.PhanTramKm <= item.ToiDa)
+                {
                     tiengiam = tong * item.PhanTramKm;
+                }
+                else
+                {
+                    tiengiam = item.ToiDa;
+                }
+                 
                 if (tiengiam > max_tiengiam)
                 {
                     max_tiengiam = tiengiam;
@@ -234,22 +244,42 @@ namespace Funiture_Project.Controllers
                 .Where(x => x.NgayBd <= new_hoadon.NgayHd && x.NgayKt >= new_hoadon.NgayHd && x.DinhMuc <= thanhtien);
             double max_tiengiam = 0;
             double tiengiam = 0;
+            int makm = -1;
             foreach (var item in khuyenmai)
             {
-                if (thanhtien * item.PhanTramKm > item.DinhMuc)
-                    tiengiam = item.DinhMuc;
-                else
+                if (thanhtien * item.PhanTramKm <= item.ToiDa)
+                {
                     tiengiam = thanhtien * item.PhanTramKm;
-                if (tiengiam > max_tiengiam) 
+                }
+                else
+                {
+                    tiengiam = item.ToiDa;
+                }
+
+                if (tiengiam > max_tiengiam)
+                {
                     max_tiengiam = tiengiam;
+                    makm = item.MaKm;
+                }
             }
             thanhtien -= max_tiengiam;
             new_hoadon.TriGia = thanhtien;
+            if(makm == -1)
+            {
+                new_hoadon.MaKm = null;
+            }
+            else
+            {
+                new_hoadon.MaKm = makm;
+            }
             _context.HoaDon.Update(new_hoadon);
 
             _context.SaveChanges();
 
             _notyfService.Success("Đặt hàng thành công");
+
+            HttpContext.Session.Set<GioHang>("CartItem", new GioHang());
+
             return RedirectToAction("Index", "Home");
         }
 

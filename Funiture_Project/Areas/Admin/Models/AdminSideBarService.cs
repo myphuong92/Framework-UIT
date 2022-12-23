@@ -131,7 +131,7 @@ namespace Funiture_Project.Areas.Admin.Models
                 Title = "Phản hồi",
                 AwesomeIcon = "fas fa-comment-dots"
 
-            });
+            });*/
             Items.Add(new SideBarItem()
             {
                 Type = SideBarItemType.NavItem,
@@ -140,7 +140,7 @@ namespace Funiture_Project.Areas.Admin.Models
                 Area = "Admin",
                 Title = "Thống kê",
                 AwesomeIcon = "fas fa-chart-bar"
-            });*/
+            });
 
         }
         public void setActive(string Controller, string Action, string Area)

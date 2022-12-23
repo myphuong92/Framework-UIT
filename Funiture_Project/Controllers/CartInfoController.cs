@@ -40,6 +40,7 @@ namespace Funiture_Project.Controllers
             var gh = _context.GioHang.AsNoTracking()
                 .Where(x => x.MaKh == makh && x.MaSp == masp)
                 .FirstOrDefault();
+            
             if (gh == null) 
             {
                 GioHang new_giohang = new GioHang { MaKh = makh, MaSp = masp, SoLuong = amount };
@@ -59,9 +60,8 @@ namespace Funiture_Project.Controllers
             {
                 _notyfService.Error(e.Message);
             }
-            
-            return RedirectToAction("Index", "Product");
 
+            return RedirectToAction("Index", "Product");
         }
 
         [Route("remove/{masp}")]

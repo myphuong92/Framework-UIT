@@ -1,4 +1,5 @@
-﻿using Funiture_Project.Models;
+﻿using Funiture_Project.Extensions;
+using Funiture_Project.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -48,6 +49,7 @@ namespace Funiture_Project.Controllers
         [Route("/ProductDetail/{id}", Name = "ProductDetail")]
         public IActionResult ProductDetail(int id)
         {
+            HttpContext.Session.Set<GioHang>("CartItem", new GioHang());
             HttpContext.Session.SetString("Masp", id.ToString());
             //var sanpham = _context.SanPham.Include(x => x.MaSp).FirstOrDefault(x => x.MaSp == id);
             string masp = id.ToString();
@@ -75,7 +77,7 @@ namespace Funiture_Project.Controllers
                     .FirstOrDefault();
 
                 var r_sp = _context.SanPham.AsNoTracking()
-                    .Where(x => x.MaDm == sp.MaDm);
+                    .Where(x => x.MaDm == sp.MaDm && x.MaSp != id);
                 int count = r_sp.Count();
                 int n = r_sp.Count();
 

@@ -5,6 +5,12 @@
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+@section Sidebar{
+    @Html.Raw(_AdminSideBarService.renderHtml())
+}
+    @{
+    _AdminSideBarService.setActive("ThongKe", "Index", "Admin");
+}
 <div class="row">
     <div class="col-sm-6">
         <div class="cart">
